@@ -4,6 +4,10 @@ set -e
 
 # Perform all actions as $POSTGRES_USER
 export PGUSER="$POSTGRES_USER"
+echo " POINT DEBUG JBL  PG_HOST=$PG_HOST"
+echo " POINT DEBUG JBL  PG_USER=$PG_USER"
+echo " POINT DEBUG JBL  PG_PASSWORD=$PG_PASSWORD"
+#echo " POINT DEBUG JBL  PG_"
 
 # Create the 'template_postgis' template db
 psql --dbname="$POSTGRES_DB" <<- 'EOSQL'
